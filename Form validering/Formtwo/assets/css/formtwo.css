@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right top, #cb3953, #dd2d66, #ed1d7f, #f80a9b, #ff08bc, #ff02b2, #ff00a9, #ff00a0, #ff3670, #ff6f42, #ffa111, #eccd00);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Main container */
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 2px 5px 1px;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+
+/* Header */
+
+.header {
+    background-color: #111;
+    border-bottom: 1px solid;
+    padding: 15px 30px;
+}
+
+.header h2 {
+    color: #ff00a9;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form */
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+/* Form - Inputs & Labels */
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    right: 15px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+/* Checkboxes */
+
+.checkbox {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+/* Text area */
+
+.txtLabel {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: none;
+    border: 2px solid;
+    width: 100%;
+    display: block;
+    font-family: inherit;
+    border-radius: 4px;
+    font-size: 12px;
+    height: 120px;
+}
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 25px;
+}
+
+.buttons #btnclear, #btnsubmit {
+    background-color: #ff00a9;
+    border: solid 1px #111;
+    border-radius: 4px;  
+    color: #fff;
+    display: flex;
+    font-family: inherit;
+    justify-content: center;
+    align-items: center;
+    width: 46%;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.buttons #btnclear {
+    background-color: #fff;
+    color: #111;
+}
+
+.buttons #btnsubmit {
+    transition: 150ms;
+}
+
+.buttons #btnsubmit:hover {
+    background-color: #ff3670;
+    filter: saturate(2);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="Formtwo/assets/css/formtwo.css">
+    <script src="/Formtwo/assets/js/formvalidation.js" defer></script>
+    <title>Form Validation</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>Sign up</h2>
+    </div>
+    <form class="form" id="form">
+        <div class="form-control">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="Your full name">
+            <i class="fa-solid fa-check-circle"></i>
+            <i class="fa-solid fa-exclamation-circle"></i>
+            <small>Error</small>
+        </div>
+    <form class="form" id="form">
+        <div class="form-control">
+            <label for="email">Email Adress</label>
+            <input type="email" id="email" placeholder="Your email adress">
+            <i class="fa-solid fa-check-circle"></i>
+            <i class="fa-solid fa-exclamation-circle"></i>
+            <small>Error</small>
+        </div>
+    <form class="form" id="form">
+        <div class="form-control">
+            <label for="tel">Phone Number</label>
+            <input type="text" id="tel" placeholder="Your phone number">
+            <i class="fa-solid fa-check-circle"></i>
+            <i class="fa-solid fa-exclamation-circle"></i>
+            <small>Error</small>
+        </div>
+
+    <div class="checkbox">
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <label for="newsletter">Subscribe to our newsletter.</label>
+    </div>
+    
+    <div class="checkbox">
+        <input type="checkbox" name="calls" id="calls">
+        <label for="calls">Opt-in to recieve calls.</label>
+    </div>
+    
+    <div>
+    <label for="txtarea" class="txtLabel">Write a comment</label>
+    <textarea name="txtarea" id="txtarea" cols="30" rows="10" placeholder="This is optional"></textarea>
+    </div>
+   
+    <div class="buttons">
+        <input type="reset" value="Clear" id="btnclear" class="btnclear">
+        <input type="submit" value="Submit" id="btnsubmit" class="btnsubmit">
+    </div>
+
+    </form>
+</div>
+
+</body>
+</html>
